@@ -1,60 +1,111 @@
+<!DOCTYPE html>
 <html>
+<head>
+	<title> Exer 01 </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-	<head>
-		<title>
-			Exer 01
-		</title>
+<body>
+	<div id="header">
+		<img src="img/cover.png" id="cover">
+		<a href="https://facebook.com/ElmerMerto14"><img src="img/main.jpg" id="main"></a>
+	</div>
 	
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
-		<link rel="stylesheet" type="text/css" href="css.css">
-	</head>
+	<h1> Elmer Christian Angelo A. Merto II</h1>
+	<h2> (Elmer Merto) </h2>
 	
-	<body>
+	<div id="left-content">
+		<img src="img/info-icon.png" class="icon">
+		<p class="div-title"> Info </p>
+		<br><br>
+		<ul>
+			<li> Male </li>
+			<li> Single </li>
+			<li> Studying BS Computer Science </li>
+			<li> Born on April 14, 1999 </li>
+			<li> From <a href="https://goo.gl/maps/iNNVrNXbwit"> Lucena City </a> </li>
+			<li> Lives in <a href="https://goo.gl/maps/zorRTT89qUU2"> Los Banos </a> </li>
+		</ul>
+	</div>
 
-		<div style="background-color: #5BBCED; height: 10px; width: 100%; position: fixed; margin-left: -7px;">
-			
+	<div id="center-content">
+		<div class="container">
+			<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="img/basketball.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="img/weights.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="img/music.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="img/fortnite.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<img class="demo cursor" src="img/basketball.jpg" style="width:100%" onclick="currentSlide(1)" alt="I play basketball. I am part of the UPLB Men's Basketball Team.">
+				</div>
+				
+				<div class="column">
+					<img class="demo cursor" src="img/weights.jpg" style="width:100%" onclick="currentSlide(2)" alt="I lift weights for conditioning and to gain weight.">
+				</div>
+				<div class="column">
+				<img class="demo cursor" src="img/music.jpg" style="width:100%" onclick="currentSlide(3)" alt="I play bass, guitar, and keyboard, and I sing. Khalid's my current favorite.">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/fortnite.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fortnite's kind of my current favorite game.">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/coding.jpeg" style="width:100%" onclick="currentSlide(5)" alt="I only took Computer Science because I copied my friend's course-to-take.">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/java.png" style="width:100%" onclick="currentSlide(6)" alt="Java is my favorite language because of OOP-ness.">
+				</div>
+			</div>
+
 		</div>
+	</div>
+	
+	<div id="right-content">
+		<img src="img/contact-icon.svg" class="icon">
+		<p class="div-title"> Find me! </p>
+		<br><br>
+		<ul>
+			<li>
+				<img src="img/instagram-icon.png" class="sm-icon">
+				<a href="https://instagram.com/heyyyelmer" class="sm-label"> Instagram </a>
+			</li>
+			<br>
+			<li>
+				<img src="img/twitter-icon.png" class="sm-icon">
+				<a href="https://twitter.com/ecamerto" class="sm-label"> Twitter </a>
+			</li>
+			<br>
+			<li>
+				<img src="img/mail-icon.png" class="sm-icon">
+				<a href="mailto:eamerto@up.edu.ph" class="sm-label"> UP Mail </a>
+			</li>
+		</ul>
+	</div>
 
+	<script type="text/javascript" src="script.js"></script>
 
-		<div id="header">
-			<a href="index.html" style="text-decoration: none;"><p id="title"> Elmer Merto </p></a>
-			<p id="desc"> a personal page </p>
-		</div>
-
-		<img src="photo.jpg" id="profile">
-		<div id="info">
-			<p style="color: red"> Favorites </p>
-			<p>CMSC Subject</p>
-			<p>Food</p>
-			<p>Sports</p>
-
-		</div>
-
-		<div id="about">
-			<em><p> Hi! I am Elmer Christian Angelo A. Merto, 18, a Computer Science student in the University of the Philippines, Los Banos.</p></em>
-			<em><p> INFP </p></em>
-		</div>
-
-
-		<div id="food">
-			<img src="food.jpg" width="50%">
-			<em><p> My favorite food is leche flan because of its sweetness.</p></em>
-		</div>
-		<div id="sports">
-			<img src="basketball.jpg" width="50%">
-			<em><p> My favorite food is basketball.</p></em>
-		</div>
-		<div id="subject">
-			<img src="database.jpg" width="50%">
-			<em><p> My favorite subject is CMSC 127.</p></em>
-		</div>
-
-
-
-
-
-	</body>
+</body>
 
 </html>

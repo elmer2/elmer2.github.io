@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+body {
+	background-color: #e8e8e8;
+}
+
+#header {
+	width: 100%;
+	height: 330px;
+}
+
+#cover {
+	width: 50%;
+	height: 30%;
+	position: absolute;
+    margin-left: 24.5%;
+
+}
+
+#main {
+	width: 10%;
+	border-radius: 1000px;
+	margin-left: 45%;
+	margin-top: 10px;
+	position: absolute;
+	top: 20%;
+    transition: transform .2s;
+
+}
+
+#main:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+#left-content{
+	background: rgba(0, 0, 255, 0.2);
+	float: left;
+	width: 23%;
+	color: black;
+	border-radius: 10px;
+    box-shadow: 3px 3px #888888;
+}
+
+#center-content{
+	background: rgba(0, 255, 0, 0.2);
+	float: left;
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 10px;
+	
+}
+#right-content{
+	background: rgba(0, 0, 255, 0.2);
+	float: left;
+	width: 23%;
+	border-radius: 10px;
+    box-shadow: 3px 3px #888888;
+}
+
+.icon{
+	width: 30px;
+	margin-top: 10px;
+	margin-left: 5px;
+	position: absolute; 
+}
+
+.sm-icon {
+	width: 30px;
+	position: absolute;
+	padding-right: 5px;
+	padding-top: -2px;
+}
+
+.sm-label {
+	padding-left: 40px;
+}
+
+.div-title{
+	margin-left: 40px;
+	position: absolute;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold; 
+}
+a {
+	text-decoration: none;
+}
+ul {
+	font-family: 'Muli', sans-serif;
+}
+
+li {
+	margin-top: 5px;
+	list-style: none;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}	
+
+* {
+    box-sizing: border-box;
+}
+
+.center-img {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
